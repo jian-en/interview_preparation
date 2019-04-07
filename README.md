@@ -45,5 +45,12 @@ def binary_search(nums, target):
 # Sorting
 ## QuickSort
 
+# Breadth First Search
+
+# Backtracking
+
 # Dynamic Programming
 * Break it into two problems: forward traverse and backward traverse
+* Top-bottom approach + memorization -> Recursive
+* Bottom-top approach + result set -> Iterative
+
