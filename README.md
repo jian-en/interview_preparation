@@ -50,6 +50,7 @@ def binary_search(nums, target):
 # Backtracking
 
 # Dynamic Programming
+* Define the transition formula
 * Break it into two problems: forward traverse and backward traverse
 * Top-bottom approach + memorization -> Recursive
 * Bottom-top approach + result set -> Iterative
