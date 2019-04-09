@@ -3,6 +3,12 @@
 * 5 / 2 == 2.5, 5//2 == 2
 * +/- math.inf
 * math.log10
+## Matrix
+* Transpose a matrix
+```python3
+M = [[1,2,3],[4,5,6],[7,8,9]]
+print(zip(*M))
+```
 ## Other
 * functools.reduce(lambda a,b : a if a > b else b,list)
 * "".join(list(reversed("fujian")))
