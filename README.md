@@ -13,12 +13,16 @@ print(zip(*M))
 * functools.reduce(lambda a,b : a if a > b else b,list)
 * "".join(list(reversed("fujian")))
 * [[0 for x in range(columns)] for y in range(rows)]
+* zip(\*iterable) can zip multiple iterables
+
 ## Data structure
 ### Namedtuple:
 * Person = collections.namedtuple('Person', 'name age gender')
 
 # Bit Manipulation
 * num &(num-1) == 0  ⇔ num is power of 2
+* num ^= 1 <=> flip between 0 and 1
+* 0, 1 -> 2, 3 | 00, 01 -> 10, 11 => use bits to encode more information
 
 # Search
 * Linear search | randomly VS sorted
