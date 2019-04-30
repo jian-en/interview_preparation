@@ -18,6 +18,25 @@ print(zip(*M))
 ## Data structure
 ### Namedtuple:
 * Person = collections.namedtuple('Person', 'name age gender')
+### Priority Queue:
+```python3
+from queue import PriorityQueue
+
+q = PriorityQueue()
+
+q.put((2, 'code'))
+q.put((1, 'eat'))
+q.put((3, 'sleep'))
+
+while not q.empty():
+    next_item = q.get()
+    print(next_item)
+
+# Result:
+#   (1, 'eat')
+#   (2, 'code')
+#   (3, 'sleep')
+```
 
 # Bit Manipulation
 * num &(num-1) == 0  ⇔ num is power of 2
