@@ -9,6 +9,9 @@
 M = [[1,2,3],[4,5,6],[7,8,9]]
 print(zip(*M))
 ```
+## Char
+* 26 letters, chr <=> ord
+
 ## Other
 * functools.reduce(lambda a,b : a if a > b else b,list)
 * "".join(list(reversed("fujian")))
@@ -37,6 +40,8 @@ while not q.empty():
 #   (2, 'code')
 #   (3, 'sleep')
 ```
+
+### Deque
 
 # Bit Manipulation
 * num &(num-1) == 0  ⇔ num is power of 2
@@ -73,6 +78,8 @@ def binary_search(nums, target):
 
 # Sorting
 ## QuickSort
+
+## Toposort
 
 # Breadth First Search
 
