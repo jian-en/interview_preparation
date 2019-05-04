@@ -74,7 +74,9 @@ def binary_search(nums, target):
         return hi
     return -1
 ```
-
+# Two Pointer
+## Same direction
+start, end = 0, 0 | find substring that satisfies some restrictions
 
 # Sorting
 ## QuickSort
