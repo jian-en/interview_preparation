@@ -1,4 +1,6 @@
 # Python3 Idioms
+## Swap
+* a, b = b, a
 ## Math
 * 5 / 2 == 2.5, 5//2 == 2
 * +/- math.inf
@@ -76,7 +78,7 @@ def binary_search(nums, target):
 ```
 # Two Pointer
 ## Same direction
-start, end = 0, 0 | find substring that satisfies some restrictions
+start, end = 0, 0 + Hashmap | find substring that satisfies some restrictions
 
 # Sorting
 ## QuickSort
