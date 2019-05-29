@@ -11,6 +11,10 @@
 M = [[1,2,3],[4,5,6],[7,8,9]]
 print(list(zip(*M))) # [(1, 4, 7), (2, 5, 8), (3, 6, 9)]
 ```
+* Matrix traverse
+```python3
+directions = [(0, 1), (1, 0), (0, -1), (-1, 0)] # right - down - left - up
+```
 ## Char
 * 26 letters, chr <=> ord
 * '1'.isdigit()
