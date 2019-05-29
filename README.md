@@ -4,20 +4,21 @@
 ## Math
 * 5 / 2 == 2.5, 5//2 == 2
 * +/- math.inf
-* math.log10
+* math.log10, math.log(base e), math.log2
 ## Matrix
 * Transpose a matrix
 ```python3
 M = [[1,2,3],[4,5,6],[7,8,9]]
-print(zip(*M))
+print(list(zip(*M))) # [(1, 4, 7), (2, 5, 8), (3, 6, 9)]
 ```
 ## Char
 * 26 letters, chr <=> ord
+* '1'.isdigit()
 
 ## Other
 * functools.reduce(lambda a,b : a if a > b else b,list)
 * "".join(list(reversed("fujian")))
-* [[0 for x in range(columns)] for y in range(rows)]
+* \[\[0 for x in range(columns)] for y in range(rows)]
 * zip(\*iterable) can zip multiple iterables
 
 ## Data structure
@@ -46,7 +47,7 @@ while not q.empty():
 ### Deque
 
 # Bit Manipulation
-* num &(num-1) == 0  ⇔ num is power of 2
+* num &(num-1) == 0  <=> num is power of 2
 * num ^= 1 <=> flip between 0 and 1
 * 0, 1 -> 2, 3 | 00, 01 -> 10, 11 => use bits to encode more information
 
