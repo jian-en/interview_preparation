@@ -50,6 +50,10 @@ while not q.empty():
 
 ### Deque
 
+### Stack
+
+* Two stacks technique (the other stack records more information, eg: minStack, maxStack)
+
 # Bit Manipulation
 * num &(num-1) == 0  <=> num is power of 2
 * num ^= 1 <=> flip between 0 and 1
