@@ -22,6 +22,7 @@ directions = [(0, 1), (1, 0), (0, -1), (-1, 0)] # right - down - left - up
 ## Other
 * functools.reduce(lambda a,b : a if a > b else b,list)
 * "".join(list(reversed("fujian")))
+* list.reverse()  # in-place reverse
 * \[\[0 for x in range(columns)] for y in range(rows)]
 * zip(\*iterable) can zip multiple iterables
 
@@ -98,9 +99,15 @@ start, end = 0, 0 + Hashmap | find substring that satisfies some restrictions
 
 # Backtracking
 
+* Recursion on every possible solutions
+* Use memo to prune the branches
+
 # Dynamic Programming
 * Define the transition formula
 * Break it into two problems: forward traverse and backward traverse
 * Top-bottom approach + memorization -> Recursive
 * Bottom-top approach + result set -> Iterative
+
+# Complexity
+* Draw the recursion tree
 
