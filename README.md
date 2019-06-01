@@ -50,7 +50,7 @@ while not q.empty():
 ```
 
 ### Trie
-!(trie)[trie.png]
+!(trie)[https://github.com/jian-en/interview_preparation/blob/master/trie.png]
 
 ```python3
 class Node:
