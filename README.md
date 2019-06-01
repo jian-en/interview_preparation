@@ -50,6 +50,7 @@ while not q.empty():
 ```
 
 ### Trie
+![trie.png]
 
 ```python3
 class Node:
