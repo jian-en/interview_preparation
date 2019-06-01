@@ -49,6 +49,55 @@ while not q.empty():
 #   (3, 'sleep')
 ```
 
+### Trie
+
+```python3
+class Node:
+
+    def __init__(self):
+        self.letters = dict()
+        self.is_word = False
+
+class Trie:
+
+    def __init__(self):
+        self.root = Node()
+
+    def insert_word(self, word):
+        node = self.root
+        for c in word:
+            if c not in node.letters:
+                node.letters[c] = Node()
+            node = node.letters[c]
+        node.is_word = True
+
+    def search_word(self, word):
+        node = self.root
+        for c in word:
+            if c not in node.letters:
+                return False
+            node = node.letters[c]
+        return node.is_word
+
+    def _delete(self, node, word, index):
+        if node.is_word and node.letters:
+            node.is_word = False
+            return node
+        elif node.is_word and not node.letters:
+            return None
+        else:
+            val = self._delete(node.letters[word[index]], word, index + 1)
+            if val is None:
+                del node.letters[word[index]]
+                if not node.letters:
+                    return None
+            return node
+
+    def delete_word(self, word):
+        if self.search_word(word):
+            self._delete(self.root, word, 0)
+```
+
 ### Deque
 
 ### Stack
