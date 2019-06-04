@@ -58,7 +58,7 @@ class Node:
 
     def __init__(self):
         self.letters = dict()
-        self.is_word = False
+        self.is_word = False # store other useful info here, eg: word = ""
 
 class Trie:
 
