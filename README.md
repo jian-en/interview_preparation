@@ -25,6 +25,7 @@ directions = [(0, 1), (1, 0), (0, -1), (-1, 0)] # right - down - left - up
 * list.reverse()  # in-place reverse
 * \[\[0 for x in range(columns)] for y in range(rows)]
 * zip(\*iterable) can zip multiple iterables
+* encode info in the existing data structure: board[y][x] ^= 256 for letters
 
 ## Data structure
 ### Namedtuple:
