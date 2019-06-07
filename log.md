@@ -115,6 +115,35 @@ class UF:
             self.size[jid] += self.size[iid]
 ```
 
+Quick union with path compression:
+
+```python3
+class UF:
+    def __init__(self, N):
+        self.nodes = list(range(N))
+        self.size = [1] * N
+    
+    def root(self, i):
+        while self.nodes[i] != i:
+            self.nodes[i] = self.nodes[self.nodes[i]] # half the root
+            i = self.nodes[i]
+        return i
+        
+    def connected(self, i, j):
+        return self.root(i) == self.root(j)
+        
+    def union(self, i, j): # depth of any node is at most lgN
+        iid = self.root(i)
+        jid = self.root(j)
+        if self.size[iid] > self.size[jid]:
+            self.nodes[jid] = iid
+            self.size[iid] += self.size[jid]
+        else:
+            self.nodes[iid] = jid
+            self.size[jid] += self.size[iid]
+```
+
+
 Trie: 
 
 Princeton algorithms:
