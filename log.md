@@ -1,4 +1,23 @@
 # Week 1 - 2
+
+Techniques:
+```python3
+class Solution:
+    
+    def backspaceCompare(self, S: str, T: str) -> bool:
+        
+        def F(S):
+            skip = 0
+            for x in reversed(S):
+                if x == '#': 
+                    skip += 1
+                elif skip:
+                    skip -= 1
+                else:
+                    yield x  # produce a generator
+        return all(x == y for x, y in itertools.zip_longest(F(S), F(T))) # Good use of all
+```
+
 Dynamic Programming:
 
 Graph - adjacent:
