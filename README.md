@@ -259,8 +259,20 @@ def dfs(source, target):
 * Bottom-top approach + result set -> Iterative
 
 
-# Complexity
+# [Complexity](https://www.freecodecamp.org/news/time-is-complex-but-priceless-f0abd015063c/)
 * Draw the recursion tree
 
 # Gotchas
 * Read questions carefully
+* Interview process:
+    - Phone screen
+    - Technology phone screen
+    - Take-home assessment
+    - On-site interviews
+* Non-technical skills:
+    - Problem solving
+    - [How to ask good questions](https://jvns.ca/blog/good-questions/)
+    - Understand assumptions
+* [Recursion](https://youtu.be/AfBqVVKg4GE)
+* [OOP](https://realpython.com/python3-object-oriented-programming/)
+* [data structure](http://interactivepython.org/runestone/static/pythonds/index.html)
