@@ -1,6 +1,16 @@
-# Python3 Idioms
+# Basics
 ## Swap
 * a, b = b, a
+## Char
+* 26 letters, chr <=> ord
+* '1'.isdigit()
+## Iterables
+* "".join(list(reversed("fujian")))
+* list.reverse()  # in-place reverse
+* \[\[0 for x in range(columns)] for y in range(rows)]
+* zip(\*iterable) can zip multiple iterables
+* itertools.zip_longest([1, 2], [1, 2, 3])
+* all, any
 ## Math
 * 5 / 2 == 2.5, 5//2 == 2
 * +/- math.inf
@@ -15,22 +25,17 @@ print(list(zip(*M))) # [(1, 4, 7), (2, 5, 8), (3, 6, 9)]
 ```python3
 directions = [(0, 1), (1, 0), (0, -1), (-1, 0)] # right - down - left - up
 ```
-## Char
-* 26 letters, chr <=> ord
-* '1'.isdigit()
+## Functions
+* yield, yield from
+* functools.reduce(lambda a,b : a if a > b else b,list)  <=> max(list)
 
 ## Other
-* functools.reduce(lambda a,b : a if a > b else b,list)
-* "".join(list(reversed("fujian")))
-* list.reverse()  # in-place reverse
-* \[\[0 for x in range(columns)] for y in range(rows)]
-* zip(\*iterable) can zip multiple iterables
 * encode info in the existing data structure: board[y][x] ^= 256 for letters
 
-## Data structure
-### Namedtuple:
+# Data structure
+## Namedtuple:
 * Person = collections.namedtuple('Person', 'name age gender')
-### Priority Queue:
+## Priority Queue:
 ```python3
 from queue import PriorityQueue
 
@@ -49,8 +54,7 @@ while not q.empty():
 #   (2, 'code')
 #   (3, 'sleep')
 ```
-
-### Trie
+## Trie
 ![trie](trie.png)
 
 ```python3
@@ -100,11 +104,83 @@ class Trie:
             self._delete(self.root, word, 0)
 ```
 
-### Deque
+## Union Find
+### Quick Find
+```python3
+class UF:
+    def __init__(self, N):
+        self.nodes = list(range(N))
+    def root(self, i):  # find
+        return self.nodes[i]
+    def connected(self, i, j):
+        return self.root(i) == self.root(j)
+    def union(self, i, j): # union too expensive, trees are flat but expensive to keep
+        iid = self.nodes[i]
+        jid = self.nodes[j]
+        for index in range(N):
+            if self.nodes[index] == jid:
+                self.nodes[index] = iid
+```
+## Quick Union
+```python3
+class UF:
+    ...
+    def root(self, i): # find: if tree is tall, too expensive
+        while self.nodes[i] != i:
+            i = self.nodes[i]
+        return i 
+    ...  
+    def union(self, i, j): # trees get tall
+        iid = self.root(i)
+        jid = self.root(j)
+        self.nodes[iid] = jid
+```
+## Imp: Weighted Quick Union
+```python3
+class UF:
+    def __init__(self, N):
+        ...
+        self.size = [1] * N
+    def root(self, i): pass # as above
+    def connected(self, i, j): pass
+    def union(self, i, j): # depth of any node is at most lgN
+        iid = self.root(i)
+        jid = self.root(j)
+        if self.size[iid] > self.size[jid]:
+            self.nodes[jid] = iid
+            self.size[iid] += self.size[jid]
+        else:
+            self.nodes[iid] = jid
+            self.size[jid] += self.size[iid]
+```
+## Imp: Path compression
+```python3
+class UF:
+    ...
+    def root(self, i):
+        while self.nodes[i] != i:
+            self.nodes[i] = self.nodes[self.nodes[i]] # half the root
+            i = self.nodes[i]
+        return i
+    ...
+```
+## Graph
+### Adjacent Matrix
+```python3
+from collections import defaultdict
+graph = defaultdict(list)
+if connected(i, j):
+    # Symmetric
+    graph[i].append(j)
+    graph[j].append(i)
+```
 
-### Stack
+## Deque
 
+## Stack
 * Two stacks technique (the other stack records more information, eg: minStack, maxStack)
+
+# Algorithm
 
 # Bit Manipulation
 * num &(num-1) == 0  <=> num is power of 2
@@ -141,24 +217,50 @@ def binary_search(nums, target):
 ## Same direction
 start, end = 0, 0 + Hashmap | find substring that satisfies some restrictions
 
-# Sorting
-## QuickSort
+## Sorting
+### QuickSort
 
-## Toposort
+### Toposort
 
-# Breadth First Search
+## Breadth First Search
+## Depth First Search
+### Iterative - stack
+```python3
+seen = [False] * num_of_elements
+for i in range(num_of_elements):
+    if not seen[i]:
+        stack = [i]
+        seen[i] = True
+        while stack:
+            item = stack.pop()
+            process(item)
+            for nei in neighbors:
+                if not seen[nei]:
+                    seen[nei] = True
+                    stack.append(nei)
+```
+### Recursive
+```python3
+def dfs(source, target):
+    if source not in seen:
+        seen.add(source)
+        if source == target: return True
+        return any(dfs(nei, target) for nei in neighbors)
+```
 
-# Backtracking
-
+## Backtracking
 * Recursion on every possible solutions
 * Use memo to prune the branches
 
-# Dynamic Programming
+## Dynamic Programming
 * Define the transition formula
 * Break it into two problems: forward traverse and backward traverse
 * Top-bottom approach + memorization -> Recursive
 * Bottom-top approach + result set -> Iterative
 
+
 # Complexity
 * Draw the recursion tree
 
+# Gotchas
+* Read questions carefully
