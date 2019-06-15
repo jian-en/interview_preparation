@@ -2,6 +2,8 @@
 
 a = a[:]
 
+__slots__
+
 # Monotone Stack
 
 ## Increasing stack
@@ -37,7 +39,7 @@ https://www.cnblogs.com/grandyang/p/8887985.html
 ## Segment Tree
 https://leetcode.com/problems/minimum-area-rectangle/
 
-## Tree Map
+## Tree Map(BST) - Review BST
 
 ## Set Operation
 ```python3
@@ -48,6 +50,36 @@ class Solution(object):
         pairset = set(map(tuple, pairs))
         return all(w1 == w2 or (w1, w2) in pairset or (w2, w1) in pairset
                    for w1, w2 in zip(words1, words2))
+```
+https://leetcode.com/problems/split-array-largest-sum/
+## Backtracking
+Good way to search the entire solution space
+
+```python3
+def backtracking(self, nums, current_max, start, left_slots):
+        
+        if left_slots == 0:
+            current_max = max(current_max, sum(nums[start:]))
+            if current_max < self.result:
+                self.result = current_max
+            return
+        
+        for pos in range(start+1, len(nums)):
+            self.backtracking(nums, max(current_max, sum(nums[start:pos])), pos, left_slots - 1)
+```
+https://leetcode.com/problems/robot-room-cleaner/submissions/
+
+## Greedy algorithm
+https://medium.com/cracking-the-data-science-interview/greedy-algorithm-and-dynamic-programming-a8c019928405
+1. Local optimization -> global optimization
+2. 
+
+## Dynamic algorithm
+https://www.programering.com/a/MDOzUzMwATM.html
+
+## List expression
+```python3
+all(True  if (a == b) or (a[0] == b[0] and a[1] > b[1] and a[1] >= 3) else False for a, b in zip(stat_a, stat_b))
 ```
 
 Princeton algorithms:
