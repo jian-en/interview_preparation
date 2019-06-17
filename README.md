@@ -5,12 +5,21 @@
 * 26 letters, chr <=> ord
 * '1'.isdigit()
 ## Iterables
-* "".join(list(reversed("fujian")))
-* list.reverse()  # in-place reverse
-* \[\[0 for x in range(columns)] for y in range(rows)]
 * zip(\*iterable) can zip multiple iterables
 * itertools.zip_longest([1, 2], [1, 2, 3])
 * all, any
+### List
+* "".join(list(reversed("fujian")))
+* list.reverse()  # in-place reverse
+* \[\[0 for x in range(columns)] for y in range(rows)]
+* Copy a list: list(orig), ls[:]
+* IF-ELSE + list expressions
+```python3
+[a if cond else b for i in iterable]
+```
+### Tuple
+* Concat: (1,2) + (1,)
+
 ## Math
 * 5 / 2 == 2.5, 5//2 == 2
 * +/- math.inf
@@ -28,6 +37,9 @@ directions = [(0, 1), (1, 0), (0, -1), (-1, 0)] # right - down - left - up
 ## Functions
 * yield, yield from
 * functools.reduce(lambda a,b : a if a > b else b,list)  <=> max(list)
+
+## OOP
+1. \_\_slots\_\_ VS \_\_dict\_\_, slots is used to reduce the memory consumption, HOWEVER, since python3.3, it is not impressive
 
 ## Other
 * encode info in the existing data structure: board[y][x] ^= 256 for letters
@@ -179,6 +191,22 @@ if connected(i, j):
 
 ## Stack
 * Two stacks technique (the other stack records more information, eg: minStack, maxStack)
+### Monotone Stack
+```python3
+# existing sequence
+stack = []
+# Add index
+while i < len(sequence):
+    while stack and v > sequence[stack[-1]]: # Non-increasing stack
+    # while stack and v < sequence[stack[-1]]: # Non-decreasing stack
+        j = stack.pop()
+        process_logic(j)
+    else:
+        stack.append(i)
+        i += 1
+```
+
+
 
 # Algorithm
 
