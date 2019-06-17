@@ -11,6 +11,7 @@
 ### List
 * "".join(list(reversed("fujian")))
 * list.reverse()  # in-place reverse
+* list[i:j] = list[i:j][::-1]
 * \[\[0 for x in range(columns)] for y in range(rows)]
 * Copy a list: list(orig), ls[:]
 * IF-ELSE + list expressions
@@ -27,7 +28,7 @@
 * - -> difference, difference_update
 * ^ -> symmetric_difference, symmetric_difference_update
 * <= -> issubset
-* >= -> issuperset
+* \>= -> issuperset
 
 ## Math
 * 5 / 2 == 2.5, 5//2 == 2
