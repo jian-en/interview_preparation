@@ -19,6 +19,15 @@
 ```
 ### Tuple
 * Concat: (1,2) + (1,)
+* Transform from list to tuple: map(tuple, ls)
+
+### Set
+* A | B (A.union(B)), A |= B (A.update(B))
+* & -> intersection, intersection_update
+* - -> difference, difference_update
+* ^ -> symmetric_difference, symmetric_difference_update
+* <= -> issubset
+* >= -> issuperset
 
 ## Math
 * 5 / 2 == 2.5, 5//2 == 2
@@ -192,10 +201,11 @@ if connected(i, j):
 ## Stack
 * Two stacks technique (the other stack records more information, eg: minStack, maxStack)
 ### Monotone Stack
+* Complexity: O(n), only stack-in and stack-out at most once
 ```python3
 # existing sequence
 stack = []
-# Add index
+# Add index rather than the value
 while i < len(sequence):
     while stack and v > sequence[stack[-1]]: # Non-increasing stack
     # while stack and v < sequence[stack[-1]]: # Non-decreasing stack
