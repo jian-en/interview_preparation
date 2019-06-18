@@ -1,4 +1,26 @@
 # Week 4
+## Day 1
+1. Two Pointer:
+```python3
+i, j = 0, 0
+        
+while i < len(s1) and j < len(s2):
+  # move i, j accordingly
+  # if there is while statement, check the boundary
+```
+
+## Day 2:
+1. Save data on Trie, count -> Trie in Princeton
+2. Greedy Algorithm: https://brilliant.org/wiki/greedy-algorithm/
+3. 
+```python3
+def longest_common_prefix(a, b):
+  i = 0
+  while i < len(a) and i < len(b) and a[i] == b[i]:
+    i += 1
+    return i
+```
+
 
 ## Tree Map(BST) - Review BST
 ## Divide and conquer (Review: MergeSort)
