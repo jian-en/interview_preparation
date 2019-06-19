@@ -20,6 +20,8 @@ def longest_common_prefix(a, b):
     i += 1
     return i
 ```
+4. isalpha(), split(seq, max_split)
+5. collections.Counter / Boundary Count
 
 
 ## Tree Map(BST) - Review BST
