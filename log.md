@@ -22,6 +22,17 @@ def longest_common_prefix(a, b):
 ```
 4. isalpha(), split(seq, max_split)
 5. collections.Counter / Boundary Count
+6. Review BST (My Calendar 3)
+
+## Day 3
+1. Edge case checking
+2. PriorityQueue in PYthon3?
+
+## Day 4
+1. Segment Tree:
+Segment tree is a very flexible data structure, because it is used to solve numerous range query problems like finding minimum, maximum, sum, greatest common divisor, least common denominator in array in logarithmic time.
+https://leetcode.com/problems/range-sum-query-mutable/solution/
+2. Tree in both array and node (iterative and recursive)
 
 
 ## Tree Map(BST) - Review BST
