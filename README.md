@@ -277,10 +277,16 @@ def binary_search(nums, target):
 # Two Pointer
 ```python3
 i, j = 0, 0
-        
 while i < len(s1) and j < len(s2):
   # move i, j accordingly
   # if there is while statement, check the boundary
+  pass
+  
+def longest_common_prefix(a, b):
+  i = 0
+  while i < len(a) and i < len(b) and a[i] == b[i]:
+    i += 1
+    return i
 ```
 ## Same direction
 start, end = 0, 0 + Hashmap | find substring that satisfies some restrictions
