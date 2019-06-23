@@ -1,9 +1,14 @@
 # Basics
 ## Swap
 * a, b = b, a
+
 ## Char
 * 26 letters, chr <=> ord
-* '1'.isdigit()
+* '1'.isdigit(), 'a'.isalpha()
+
+## String
+* split(sep='.', max_split)
+
 ## Iterables
 * zip(\*iterable) can zip multiple iterables
 * itertools.zip_longest([1, 2], [1, 2, 3])
@@ -217,6 +222,14 @@ while i < len(sequence):
         i += 1
 ```
 
+## Counter
+* Init: list, string, dict, params
+* API:
+  - update: Like dict.update() but add counts instead of replacing them.
+  - elements: Iterator over elements repeating each as many times as its count.
+  - most_common: List the n most common elements and their counts from the most common to the least.  If n is None, then list all element counts.
+  - Like dict: can access the value with c\[key\]
+  - Arithmetic: +, -, &(min), |(max)
 
 
 # Algorithm
@@ -253,8 +266,16 @@ def binary_search(nums, target):
     return -1
 ```
 # Two Pointer
+```python3
+i, j = 0, 0
+        
+while i < len(s1) and j < len(s2):
+  # move i, j accordingly
+  # if there is while statement, check the boundary
+```
 ## Same direction
 start, end = 0, 0 + Hashmap | find substring that satisfies some restrictions
+
 
 ## Sorting
 ### QuickSort
