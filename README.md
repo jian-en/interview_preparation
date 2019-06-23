@@ -62,7 +62,15 @@ directions = [(0, 1), (1, 0), (0, -1), (-1, 0)] # right - down - left - up
 # Data structure
 ## Namedtuple:
 * Person = collections.namedtuple('Person', 'name age gender')
-## Priority Queue:
+## Heap:
+* heapq, API:
+   - heapq.heappush(ls, item)
+   - heapq.heappop(ls)
+   - heapq.heapreplace(ls, item) => pop + push
+   - heapq.heapify(ls)
+   - heapq.nlargest(n, ls), heapq.nsmallest(n, ls)
+   - heapq.merge(\*data)
+* PriorityQueue
 ```python3
 from queue import PriorityQueue
 
@@ -71,12 +79,13 @@ q = PriorityQueue()
 q.put((2, 'code'))
 q.put((1, 'eat'))
 q.put((3, 'sleep'))
-
+print(q.qsize())
 while not q.empty():
     next_item = q.get()
     print(next_item)
 
 # Result:
+#   3
 #   (1, 'eat')
 #   (2, 'code')
 #   (3, 'sleep')
