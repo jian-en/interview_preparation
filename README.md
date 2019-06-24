@@ -240,6 +240,9 @@ while i < len(sequence):
   - Like dict: can access the value with c\[key\]
   - Arithmetic: +, -, &(min), |(max)
 
+## Segment Tree
+![segmentTree](segtree.png)
+
 
 # Algorithm
 
