@@ -327,6 +327,15 @@ def dfs(source, target):
 * Recursion on every possible solutions
 * Use memo to prune the branches
 
+## Greedy Algorithm
+
+Greedy choice property: 
+* A global (overall) optimal solution can be reached by choosing the optimal choice at each step.
+* Optimal substructure: A problem has an optimal substructure if an optimal solution to the entire problem contains the optimal solutions to the sub-problems.
+* Counter example:
+![greedyalg](greedyalg.png)
+
+
 ## Dynamic Programming
 * Define the transition formula
 * Break it into two problems: forward traverse and backward traverse
