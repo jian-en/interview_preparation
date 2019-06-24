@@ -1,49 +1,13 @@
-# Week 4
-## Day 1
-1. Two Pointer:
-```python3
-i, j = 0, 0
-        
-while i < len(s1) and j < len(s2):
-  # move i, j accordingly
-  # if there is while statement, check the boundary
-```
-
-## Day 2:
-1. Save data on Trie, count -> Trie in Princeton
-2. Greedy Algorithm: https://brilliant.org/wiki/greedy-algorithm/
-3. 
-```python3
-def longest_common_prefix(a, b):
-  i = 0
-  while i < len(a) and i < len(b) and a[i] == b[i]:
-    i += 1
-    return i
-```
-4. isalpha(), split(seq, max_split)
-5. collections.Counter / Boundary Count
-6. Review BST (My Calendar 3)
-
-## Day 3
-1. Edge case checking
-2. PriorityQueue in PYthon3?
-
-## Day 4
-1. Segment Tree:
-Segment tree is a very flexible data structure, because it is used to solve numerous range query problems like finding minimum, maximum, sum, greatest common divisor, least common denominator in array in logarithmic time.
-https://leetcode.com/problems/range-sum-query-mutable/solution/
-2. Tree in both array and node (iterative and recursive)
+# Week 5
 
 
-## Tree Map(BST) - Review BST
-## Divide and conquer (Review: MergeSort)
-## Segment Tree
-## Greedy algorithm
-https://leetcode.com/problems/split-array-largest-sum/
-https://medium.com/cracking-the-data-science-interview/greedy-algorithm-and-dynamic-programming-a8c019928405
-1. Local optimization -> global optimization
-## Dynamic algorithm
-https://www.programering.com/a/MDOzUzMwATM.html
+### Princeton/MIT Review
+1. Merge Sort
+2. BST
+3. Heap
+3. Sweep line
+4. Trie
+5. Topological Sort
 
 
 
