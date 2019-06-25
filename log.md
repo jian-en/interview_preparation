@@ -1,5 +1,22 @@
 # Week 5
 
+## Day 1
+https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/
+1. Singly linked list: fast/slow pointer
+```python3
+def findMiddle(self, head):
+        fast_ptr = slow_ptr = head
+        prev_ptr = None
+        
+        while fast_ptr and fast_ptr.next:
+            
+            prev_ptr = slow_ptr
+            slow_ptr = slow_ptr.next
+            fast_ptr = fast_ptr.next.next
+        if prev_ptr:
+            prev_ptr.next = None
+        return slow_ptr
+```
 
 ### Princeton/MIT Review
 1. Merge Sort
