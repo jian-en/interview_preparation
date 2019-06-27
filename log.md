@@ -17,6 +17,11 @@ def findMiddle(self, head):
             prev_ptr.next = None
         return slow_ptr
 ```
+## Day 2
+1. Determine if a string is "()" valid or not
+## Day 3
+1. Tree traversal in three ways
+2. Graph: DFS - iterative + recursive + Union Find
 
 ### Princeton/MIT Review
 1. Merge Sort
