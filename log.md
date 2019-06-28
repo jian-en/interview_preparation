@@ -22,6 +22,8 @@ def findMiddle(self, head):
 ## Day 3
 1. Tree traversal in three ways
 2. Graph: DFS - iterative + recursive + Union Find
+## Day 4
+1. Tree traversal + Morris Traversal -> https://www.cnblogs.com/AnnieKim/archive/2013/06/15/morristraversal.html
 
 ### Princeton/MIT Review
 1. Merge Sort
