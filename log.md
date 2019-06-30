@@ -23,7 +23,11 @@ def findMiddle(self, head):
 1. Tree traversal in three ways
 2. Graph: DFS - iterative + recursive + Union Find
 ## Day 4
+https://leetcode.com/problems/recover-binary-search-tree/submissions/
 1. Tree traversal + Morris Traversal -> https://www.cnblogs.com/AnnieKim/archive/2013/06/15/morristraversal.html
+## Day 5
+1. Topographical Sort: BFS
+2. DFS -> three status (unvisited, visited, finished)
 
 ### Princeton/MIT Review
 1. Merge Sort
