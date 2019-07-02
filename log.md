@@ -3,6 +3,9 @@ tail recursion?
 ## Day 1
 1. heapq.nsmallest(K, values, key=?)
 2. quickselect? pivot? select the largest? randint? https://leetcode.com/problems/k-closest-points-to-origin/
+## Day 2
+1. format, zfill, padding nums?
+2. defaultdict: values() -> a view? / tuple as a key
 
 
 
