@@ -7,6 +7,8 @@ tail recursion?
 1. format, zfill, padding nums?
 2. defaultdict: values() -> a view? / tuple as a key
 
+## Day 3
+1. backtrack: cut branches
 
 
 
