@@ -11,6 +11,7 @@ tail recursion?
 1. backtrack: cut branches
 2. list ops: insert
 3. Greedy algorithms
+4. Counter
 
 
 
