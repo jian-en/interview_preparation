@@ -1,21 +1,4 @@
-# Week 6
-## Day 1
-1. heapq.nsmallest(K, values, key=?)
-2. quickselect? pivot? select the largest? randint? https://leetcode.com/problems/k-closest-points-to-origin/
-## Day 2
-1. format, zfill, padding nums?
-2. defaultdict: values() -> a view? / tuple as a key
-
-## Day 3
-1. backtrack: cut branches
-2. list ops: insert
-3. Greedy algorithms
-
-## Day 4
-1. Counter
-
-## Day 5
-1. Heap, counter
+# Week 7
 
 
 
