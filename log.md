@@ -1,5 +1,8 @@
 # Week 7
 
+MST:
+Kruskal, Prim
+
 ## Day1
 1. Topological sort: BFS
 2. Shortest path: DFS and Djstras: https://leetcode.com/problems/network-delay-time/submissions/
