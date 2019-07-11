@@ -1,5 +1,16 @@
 # Week 7
 
+## Day1
+1. Topological sort: BFS
+2. Shortest path: DFS and Djstras: https://leetcode.com/problems/network-delay-time/submissions/
+
+## Day2
+1. String: replace -> return, index(valueError), find(-1)
+2. sum([True, False]) == 1, Monotone stack (use index as the sorted array, very tricky) https://leetcode.com/problems/odd-even-jump/submissions/
+
+## Day3,4
+1. Two pointer -> sliding window
+
 
 
 Princeton algorithms:
