@@ -1,11 +1,15 @@
-# Week 7
+# Week 8
 
+Shortest path: DFS and Djstras: https://leetcode.com/problems/network-delay-time/submissions/
+Monotone stack (use index as the sorted array, very tricky) https://leetcode.com/problems/odd-even-jump/submissions/
+Two pointer -> sliding window
 
-2. Shortest path: DFS and Djstras: https://leetcode.com/problems/network-delay-time/submissions/
-3. Monotone stack (use index as the sorted array, very tricky) https://leetcode.com/problems/odd-even-jump/submissions/
-1. Two pointer -> sliding window
+## Day 1
 
-
+## Day 2
+## Day 3
+## Day 4
+## Day 5
 
 Princeton algorithms:
 Part I focuses on elementary data structures, sorting, and searching. Topics include union−find, binary search, stacks, queues, bags, insertion sort, selection sort, shellsort, quicksort, 3-way quicksort, mergesort, heapsort, binary heaps, binary search trees, red−black trees, separate-chaining and linear-probing hash tables, Graham scan, and kd-trees.
