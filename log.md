@@ -8,6 +8,8 @@ Two pointer -> sliding window
 1. Toposort: layer by layer(use ordinary list, two queues) 
 
 ## Day 2
+1. Two pointer: -> remove repetitions
+
 ## Day 3
 ## Day 4
 ## Day 5
