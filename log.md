@@ -5,6 +5,7 @@ Monotone stack (use index as the sorted array, very tricky) https://leetcode.com
 Two pointer -> sliding window
 
 ## Day 1
+1. Toposort: layer by layer(use ordinary list, two queues) 
 
 ## Day 2
 ## Day 3
