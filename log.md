@@ -9,8 +9,11 @@ Two pointer -> sliding window
 
 ## Day 2
 1. Two pointer: -> remove repetitions
-
+2. Combination, permutation: https://leetcode.com/problems/3sum-with-multiplicity/discuss/181131/C%2B%2BJavaPython-O(N-%2B-101-*-101)
+3. How to make it edge-case compatible: https://leetcode.com/problems/next-permutation/solution/, reverse
 ## Day 3
+1. Draw a graph to visualize the whole process
+
 ## Day 4
 ## Day 5
 
