@@ -13,6 +13,7 @@ Two pointer -> sliding window
 3. How to make it edge-case compatible: https://leetcode.com/problems/next-permutation/solution/, reverse
 ## Day 3
 1. Draw a graph to visualize the whole process
+2. Break a big question to smaller ones, Shortest path
 
 ## Day 4
 ## Day 5
