@@ -1,19 +1,23 @@
-# Week 8
+# Week 9
 
 Shortest path: DFS and Djstras: https://leetcode.com/problems/network-delay-time/submissions/
+1. Toposort: layer by layer(use ordinary list, two queues) 
 Monotone stack (use index as the sorted array, very tricky) https://leetcode.com/problems/odd-even-jump/submissions/
 Two pointer -> sliding window
-
-## Day 1
-1. Toposort: layer by layer(use ordinary list, two queues) 
-
-## Day 2
+Dynamic Programming
 1. Two pointer: -> remove repetitions
 2. Combination, permutation: https://leetcode.com/problems/3sum-with-multiplicity/discuss/181131/C%2B%2BJavaPython-O(N-%2B-101-*-101)
 3. How to make it edge-case compatible: https://leetcode.com/problems/next-permutation/solution/, reverse
+
+## Day 1
+1. Euler Graph -> Path: https://www.geeksforgeeks.org/hierholzers-algorithm-directed-graph/, https://leetcode.com/problems/reconstruct-itinerary/discuss/78766/Share-my-solution
+
+
+## Day 2
+
 ## Day 3
-1. Draw a graph to visualize the whole process
-2. Break a big question to smaller ones, Shortest path
+
+
 
 ## Day 4
 ## Day 5
