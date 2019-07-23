@@ -12,8 +12,8 @@ Dynamic Programming
 ## Day 1
 1. Euler Graph -> Path: https://www.geeksforgeeks.org/hierholzers-algorithm-directed-graph/, https://leetcode.com/problems/reconstruct-itinerary/discuss/78766/Share-my-solution
 
-
 ## Day 2
+Formulate a DP problem
 
 ## Day 3
 
