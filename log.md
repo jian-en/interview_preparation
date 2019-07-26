@@ -15,9 +15,8 @@ Dynamic Programming
 ## Day 2
 Formulate a DP problem
 
+Base case
 ## Day 3
-
-
 
 ## Day 4
 ## Day 5
