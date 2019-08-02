@@ -1,4 +1,4 @@
-# Week 9
+# Week 10
 
 Shortest path: DFS and Djstras: https://leetcode.com/problems/network-delay-time/submissions/
 1. Toposort: layer by layer(use ordinary list, two queues) 
@@ -9,16 +9,15 @@ Dynamic Programming
 2. Combination, permutation: https://leetcode.com/problems/3sum-with-multiplicity/discuss/181131/C%2B%2BJavaPython-O(N-%2B-101-*-101)
 3. How to make it edge-case compatible: https://leetcode.com/problems/next-permutation/solution/, reverse
 
-## Day 1
 1. Euler Graph -> Path: https://www.geeksforgeeks.org/hierholzers-algorithm-directed-graph/, https://leetcode.com/problems/reconstruct-itinerary/discuss/78766/Share-my-solution
 
-## Day 2
-Formulate a DP problem
+## Day 1
+Matrix DP: vertical, horizontal
 
-Base case
 ## Day 3
 
 ## Day 4
+transpose, Monotone Stack
 ## Day 5
 
 Princeton algorithms:
