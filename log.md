@@ -29,3 +29,7 @@ Part II focuses on graph and string-processing algorithms. Topics include depth-
 https://www.coursera.org/learn/algorithms-part2/home/week/6
 
 
+Linked list: dummy head
+
+
+
