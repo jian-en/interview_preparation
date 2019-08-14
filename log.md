@@ -35,6 +35,7 @@ detect a circle: DFS
 Topo:
 1. all topo sequences: DFS
 2. Only one topo? one item in queue!!
+3. 2D to a one d question
 
 
 
