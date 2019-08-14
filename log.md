@@ -32,6 +32,9 @@ https://www.coursera.org/learn/algorithms-part2/home/week/6
 Linked list: dummy head
 
 detect a circle: DFS
+Topo:
+1. all topo sequences: DFS
+2. Only one topo? one item in queue!!
 
 
 
