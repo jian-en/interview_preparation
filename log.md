@@ -1,42 +1,4 @@
-# Week 10
+# Week 9.2
 
-Shortest path: DFS and Djstras: https://leetcode.com/problems/network-delay-time/submissions/
-1. Toposort: layer by layer(use ordinary list, two queues) 
-Monotone stack (use index as the sorted array, very tricky) https://leetcode.com/problems/odd-even-jump/submissions/
-Two pointer -> sliding window
-Dynamic Programming
-1. Two pointer: -> remove repetitions
-2. Combination, permutation: https://leetcode.com/problems/3sum-with-multiplicity/discuss/181131/C%2B%2BJavaPython-O(N-%2B-101-*-101)
-3. How to make it edge-case compatible: https://leetcode.com/problems/next-permutation/solution/, reverse
-
-1. Euler Graph -> Path: https://www.geeksforgeeks.org/hierholzers-algorithm-directed-graph/, https://leetcode.com/problems/reconstruct-itinerary/discuss/78766/Share-my-solution
-
-## Day 1
-Matrix DP: vertical, horizontal
-
-## Day 3
-
-## Day 4
-transpose, Monotone Stack
-## Day 5
-
-Princeton algorithms:
-Part I focuses on elementary data structures, sorting, and searching. Topics include union−find, binary search, stacks, queues, bags, insertion sort, selection sort, shellsort, quicksort, 3-way quicksort, mergesort, heapsort, binary heaps, binary search trees, red−black trees, separate-chaining and linear-probing hash tables, Graham scan, and kd-trees.
-https://www.coursera.org/learn/algorithms-part1/home/welcome
-
-
-Part II focuses on graph and string-processing algorithms. Topics include depth-first search, breadth-first search, topological sort, Kosaraju−Sharir, Kruskal, Prim, Dijkistra, Bellman−Ford, Ford−Fulkerson, LSD radix sort, MSD radix sort, 3-way radix quicksort, multiway tries, ternary search tries, Knuth−Morris−Pratt, Boyer−Moore, Rabin–Karp, regular expression matching, run-length coding, Huffman coding, LZW compression and Burrows−Wheeler transform. Part II also introduces reductions and intractability, including the P = NP problem.
-https://www.coursera.org/learn/algorithms-part2/home/week/6
-
-
-Linked list: dummy head
-
-detect a circle: DFS
-Topo:
-1. all topo sequences: DFS
-2. Only one topo? one item in queue!!
-3. 2D to a one d question
-4. Bidirectional BFS search
-
-
-
+## Thursday
+1. Segment Tree / Binary Index Tree
