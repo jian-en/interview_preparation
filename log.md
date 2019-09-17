@@ -1,4 +1,8 @@
-# Week 9.2
+# Week 9.16
 
-## Thursday
-1. Segment Tree / Binary Index Tree
+Segment Tree / Binary Index Tree
+
+## Tueday
+1. Deterministic Finite Automata
+
+
