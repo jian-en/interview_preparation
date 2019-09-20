@@ -7,3 +7,6 @@ Segment Tree / Binary Index Tree
 
 ## Thursday
 1. PrefixSum - sum question
+
+## Friday
+1. BST
